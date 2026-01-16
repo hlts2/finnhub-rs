@@ -12,8 +12,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     });
 
     let profile = default_api::company_profile2(&config, Some("AAPL"), None, None).await?;
-
     println!("{:?}", profile);
-
     Ok(())
 }
